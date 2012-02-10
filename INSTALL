@@ -36,8 +36,13 @@ $B2G.
       lib32readline-gplv2-dev
 
   lib32readline-gplv2-dev is available for Ubuntu 11.10. For Ubuntu 10.10
-  lib32readline5-dev seems to work fine.
+  lib32readline5-dev seems to work fine. 
 
+  If you are using a 32-bit version of Ubuntu, you won't find the lib32 
+  versions of the libraries above, so change "lib32" to just "lib" in the 
+  packge names. ia32-libs doesn't seem to exist in 32-bit Ubuntu and is
+  (hopefully) not needed. libz1 was already installed on my Ubuntu 11.10
+  and the package manager didn't have a -dev version.
 
  Quick start
 -------------
